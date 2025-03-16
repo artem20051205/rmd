@@ -5,8 +5,8 @@ const config: NextConfig = {
   images: {
     unoptimized: true, // Отключаем оптимизацию изображений для GitHub Pages
   },
-  basePath: "/rmd1",  // Задай имя своего репозитория
-  assetPrefix: "/rmd1", // Тоже укажи имя репозитория
+  basePath: "/rmd",  // Задай имя своего репозитория
+  assetPrefix: "/rmd", // Тоже укажи имя репозитория
 };
 
 export default config;
