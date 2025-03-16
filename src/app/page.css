@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+body {
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #444444, #000000);
+}
+
+.mulish-regular {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mulish-bold {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.portfolio-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: linear-gradient(to bottom right, #aaa, #000000);
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.header-logo {
+  width: 340px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.header-title {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.title {
+  margin: 0;
+  font-size: 2em;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.section {
+  width: 90%;
+  margin: 20px 0;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #fff, #d0d0d0);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.small-profile-photo {
+  width: 100px;
+  height: 100px;
+}
+
+.home-text {
+  text-align: left;
+}
+
+.home-text1 {
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  color: #000;
+  transition: color 0.3s;
+}
+
+social-media a:hover {
+  color: #0073b1;
+}
+
+.contact-image {
+  width: 150px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.sticky-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    padding: 10px;
+  }
+
+  .header-logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .header-title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .home-text {
+    text-align: center;
+  }
+
+  .home-text1 h2, .home-text1 h3 {
+    font-size: 1.2em;
+  }
+}

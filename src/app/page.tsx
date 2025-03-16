@@ -1,103 +1,111 @@
-import Image from "next/image";
+import React from 'react';
+import { FaWhatsapp, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import './page.css';
 
-export default function Home() {
+const PortfolioPage = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+    <div className="portfolio-container">
+      <header className="header sticky-header">
+        <img src="/logo.png" alt="Logo" className="header-logo" />
+        <h1 className="header-title">Pythius</h1>
+      </header>
+      <section id="home" className="section home">
+        <div className="home-content">
+          <img src="/raymond.jpeg" alt="Profile" className="profile-photo small-profile-photo" />
+          <div className="home-text">
+            <div className="home-text1">
+              <h2 style={{ marginBottom: '20px' }}><b>Pythius Organisatieontwikkeling vanuit Mens en motivatie</b></h2>
+            </div>
+            <p><strong>Pythius</strong> staat voor begrijpen.</p>
+            <p>Begrijpen waar <strong>behoeften</strong> en <strong>wensen</strong> te vertalen zijn in beleid en praktijk.</p>
+            <p>Begrijpen waar <strong>resultaten</strong> beter kunnen, organisaties succesvoller en mensen gemotiveerder.</p>
+            <p><strong>Pythius</strong> ondersteunt en adviseert in veranderende omgevingen, met verschillende mensen van uiteenlopende organisaties.</p>
+            <p><strong>Pythius</strong> is Raymond van Dasselaar.</p>
+          </div>
+        </div>
+      </section>
+      <section id="pythius" className="section pythius" style={{ backgroundImage: 'url(/vijfer3.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="home-text">
+          <div className="home-text1">
+          <h2 style={{ marginBottom: '20px' }}><b>Pythius</b></h2>
+          </div>
+          <p>Information about <strong>Pythius</strong>.</p>
+          <p><strong>Pythius</strong> ondersteunt mensen en organisaties bij hun ontwikkeling</p>
+          <p><strong>Pythius</strong> is Raymond van Dasselaar, handelend onder de naam <strong>Pythius</strong>.</p>
+          <p>Met een open blik kijkt Raymond binnen bij zijn opdrachtgevers.</p>
+          <p>Luisterend, onderzoekend en analyserend gaat hij met zijn gesprekspartners op zoek. Verhalend en vertalend geeft hij vorm en inhoud aan beleid en uitvoering.</p>
+          <p>Vaak noemt men hem enthousiast en betrokken.</p>
+          <p>In uiteenlopende resultaatgebieden, zoals <strong>HRM, ICT</strong>, Kwaliteitsmanagement en Projectmanagement ontwikkelde Raymond zijn kennis.</p>
+          <p>Zijn ervaring deed hij op bij grote organisaties in diverse branches.</p>
+          <p>Vanaf 2006 is Raymond als zelfstandig adviseur betrokken bij de groei en ontwikkeling van mensen en organisaties. Adviserend en beleid realiserend is hij momenteel actief in stadsdelen en de centrale stad van Amsterdam.</p>
+          <p>Daarnaast ondersteunt hij, adviserend en audits begeleidend, de landelijke <strong>ICT</strong> ondersteunende organisatie van de Politie.</p>
+            <div className="home-text1">
+            <h3 style={{ marginBottom: '20px' }}><b>De mythe</b></h3>
+            </div>
+          <p>Reeds kort na zijn geboorte doodde Apollon door zijn pijlen Python.</p>
+          <p>Python, de draak die het heiligdom Pytho nabij de berg Parnassus onveilig maakte.</p>
+          <p>Naar deze overwinning verkreeg Apollon de naam van Apollon Pythios (de Pythische).</p>
+          <p>Hij zou van het heiligdom Pytho het zijne maken, wat bekend werd als het orakel van Delphi.</p>
+          <p>Jaarlijks werden, in dankbare herinnering, de Pythische Spelen georganiseerd.</p>
+            <div className="home-text1">
+            <h3 style={{ marginBottom: '20px' }}><b>Pythius</b></h3>
+            </div>
+          <p>
+            <strong>Glijdend</strong> door de lucht<br />
+            overzichtelijk ziend<br />
+            vergezeld van eeuwige wijsheid<br />
+            een draak<br />
+          </p>
+          <p>
+            <strong>Pythius</strong> zacht verschroeiend<br />
+            frisse kijk<br />
+            nimmer dwingend<br />
+            immer inspirerend<br />
+          </p>
+          <p>
+            De andere weg<br />
+            is dichter bij<br />
+            dan jijzelf.<br />
+          </p>
+        </div>
+      </section>
+      <section id="referentie" className="section referentie">
+        <h2>Referentie</h2>
+        <p>???</p>
+      </section>
+      <section id="contact" className="section contact">
+      <h2 style={{ marginBottom: '20px' }}><b>Contact</b></h2>
+        <div className="home-content contact-content">
+          <div className="home-text">
+            <p><strong>Raymond van Dasselaar</strong></p>
+            <p>Zelfstandig Organisatieadviseur</p>
+            <p>Kantemarsweg 8d</p>
+            <p>3871 AP Hoevelaken</p>
+            <p>06-39788959</p>
+            <p><a href="mailto:Pythius@me.com">Pythius@me.com</a></p>
+            <p>Kamer van Koophandel 32117074</p>
+            <p>ABN AMRO 54.45.99.942</p>
+            <p>BTW NL192377310B01</p>
+          </div>
+          <img src="/r1.jpg" alt="Contact Image" className="contact-image" />
+        </div>
+      </section>
+      <section id="link" className="section link">
+        <h2><b>Link</b></h2>
+        <div className="social-media">
+          <a href="https://wa.me/---" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp size={30} />
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+          <a href="https://www.linkedin.com/---" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={30} />
+          </a>
+          <a href="https://twitter.com/---" target="_blank" rel="noopener noreferrer">
+            <FaTwitter size={30} />
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
     </div>
   );
-}
+};
+
+export default PortfolioPage;
