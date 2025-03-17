@@ -4,7 +4,7 @@ body {
   font-family: 'Mulish', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom right, #444444, #000000);
+  background: linear-gradient(to bottom right, #00293c, #000000);
 }
 
 .mulish-regular {
@@ -64,7 +64,7 @@ body {
   width: 90%;
   margin: 20px 0;
   padding: 20px;
-  background: linear-gradient(to bottom right, #fff, #d0d0d0);
+  background: linear-gradient(to bottom right, #e3afbc, #e3afbc);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -141,7 +141,7 @@ social-media a:hover {
   position: sticky;
   top: 10px;
   z-index: 1000;
-  background-color: #fff;
+  background-color: #e3e2df;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
