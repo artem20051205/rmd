@@ -5,7 +5,7 @@
   "homepage": "https://artem20051205.github.io/rmd",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next dev --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "next build",
