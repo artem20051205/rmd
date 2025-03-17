@@ -26,7 +26,7 @@ const PortfolioPage = () => {
         </div>
       </section>
       <section id="pythius" className="section pythius" style={{ backgroundImage: 'url(/vijfer3.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="home-text">
+      <div className="home-text" style={{ color: '#151528' }}>
           <div className="home-text1">
           <h2 style={{ marginBottom: '20px' }}><b>Pythius</b></h2>
           </div>
