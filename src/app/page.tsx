@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { FaWhatsapp, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import './page.css';
 
@@ -6,12 +7,12 @@ const PortfolioPage = () => {
   return (
     <div className="portfolio-container">
       <header className="header sticky-header">
-        <img src="/logo.png" alt="Logo" className="header-logo" />
+        <Image src="/logo.png" alt="Logo" className="header-logo" width={340} height={100} />
         <h1 className="header-title">Pythius</h1>
       </header>
       <section id="home" className="section home">
         <div className="home-content">
-          <img src="/raymond.jpeg" alt="Profile" className="profile-photo small-profile-photo" />
+          <Image src="/raymond.jpeg" alt="Profile" className="profile-photo small-profile-photo" width={150} height={150} />
           <div className="home-text">
             <div className="home-text1">
               <h2 style={{ marginBottom: '20px' }}><b>Pythius Organisatieontwikkeling vanuit Mens en motivatie</b></h2>
@@ -87,7 +88,7 @@ const PortfolioPage = () => {
             <p>ABN AMRO 54.45.99.942</p>
             <p>BTW NL192377310B01</p>
           </div>
-          <img src="/r1.jpg" alt="Contact Image" className="contact-image" />
+          <Image src="/r1.jpg" alt="Contact Image" className="contact-image" width={150} height={150} />
         </div>
       </section>
       <section id="link" className="section link">
